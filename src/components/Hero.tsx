@@ -35,29 +35,16 @@ const Hero = () => {
     <section ref={ref} className="relative min-h-screen overflow-hidden">
       {/* Background with parallax */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroBg})` }}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/contador.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
         />
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/60" />
-        
-        {/* Animated gradient overlay */}
-        <motion.div
-          className="absolute inset-0 opacity-30"
-          animate={{
-            backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          style={{
-            background: "linear-gradient(135deg, transparent 0%, hsl(205 85% 55% / 0.3) 50%, transparent 100%)",
-            backgroundSize: "200% 200%",
-          }}
-        />
+        {/* Subtle dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/40" />
       </motion.div>
 
       {/* Floating elements */}

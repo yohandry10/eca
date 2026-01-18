@@ -4,6 +4,7 @@ import { ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
+const ctaBg = "/contador4.png";
 
 const CTASection = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -19,10 +20,12 @@ const CTASection = () => {
       {/* Parallax background */}
       <motion.div style={{ y }} className="absolute inset-0 -top-20 -bottom-20">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${heroBg})` }}
+          className="absolute inset-0 bg-cover bg-top bg-fixed"
+          style={{ backgroundImage: `url(${ctaBg})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/90 to-primary/85" />
+        {/* Medium white overlay to wash out image but keep it visible */}
+        <div className="absolute inset-0 bg-white/60" />
+
       </motion.div>
 
       {/* Floating shapes */}
@@ -55,14 +58,14 @@ const CTASection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center"
         >
-          {/* Glass card */}
-          <div className="glass-dark rounded-3xl p-10 md:p-14 backdrop-blur-xl">
+          {/* Dark/Black card style as per reference - Smaller and Blue Text */}
+          <div className="bg-black/80 backdrop-blur-sm border border-white/20 rounded-3xl p-8 md:p-10 shadow-strong max-w-2xl mx-auto">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-primary-foreground mb-4 leading-tight"
+              className="text-2xl md:text-3xl font-display font-bold text-secondary mb-4 leading-tight"
             >
               ¡CONSTITUYE TU EMPRESA{" "}
               <span className="text-secondary">RÁPIDA, DIGITAL Y SEGURA!</span>
@@ -73,7 +76,7 @@ const CTASection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="text-primary-foreground/80 text-lg mb-8"
+              className="text-white/90 text-lg mb-8"
             >
               Simplifica tu contabilidad y asegura el cumplimiento tributario hoy mismo.
             </motion.p>
@@ -87,7 +90,7 @@ const CTASection = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-10 py-7 rounded-full shadow-strong transition-all duration-300 group"
+                className="bg-slate-800 text-white hover:bg-slate-700 font-semibold px-10 py-7 rounded-full shadow-strong transition-all duration-300 group"
               >
                 <Link to="/contacto">
                   <Phone className="mr-2" size={20} />

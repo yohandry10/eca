@@ -37,10 +37,10 @@ const Footer = () => {
               />
             </Link>
             <p className="text-primary-foreground/70 leading-relaxed mb-6 max-w-sm">
-              Somos un equipo de profesionales, dedicados a brindar soluciones contables 
+              Somos un equipo de profesionales, dedicados a brindar soluciones contables
               y financieras adaptadas a las necesidades de tu negocio.
             </p>
-            
+
             {/* Social links */}
             <div className="flex gap-4">
               {[
@@ -95,7 +95,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-            
+
             <h4 className="font-display font-bold text-lg mb-4 mt-6">Nosotros</h4>
             <ul className="space-y-3">
               {footerLinks.nosotros.map((link, idx) => (
@@ -124,7 +124,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-secondary flex-shrink-0" size={18} />
-                <a 
+                <a
                   href="mailto:consultores.solucioneseca1@gmail.com"
                   className="text-primary-foreground/70 text-sm hover:text-secondary transition-colors break-all"
                 >
@@ -133,7 +133,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-secondary flex-shrink-0" size={18} />
-                <a 
+                <a
                   href="tel:+51923341098"
                   className="text-primary-foreground/70 text-sm hover:text-secondary transition-colors"
                 >
@@ -153,7 +153,7 @@ const Footer = () => {
               © {new Date().getFullYear()} ECA Soluciones Empresariales. Todos los derechos reservados.
             </p>
             <div className="flex gap-6">
-              <Link to="/privacidad" className="text-primary-foreground/50 text-sm hover:text-secondary transition-colors">
+              <Link to="/politica-privacidad" className="text-primary-foreground/50 text-sm hover:text-secondary transition-colors">
                 Política de Privacidad
               </Link>
               <Link to="/terminos" className="text-primary-foreground/50 text-sm hover:text-secondary transition-colors">

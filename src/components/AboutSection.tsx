@@ -20,7 +20,7 @@ const AboutSection = () => {
     <section ref={ref} className="section-padding bg-background relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-sky-pale/50 to-transparent" />
-      
+
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left - Image */}
@@ -46,12 +46,11 @@ const AboutSection = () => {
             {/* Main image */}
             <div className="relative rounded-3xl overflow-hidden shadow-strong">
               <img
-                src={aboutTeam}
+                src="/contador3.png"
                 alt="Equipo ECA"
                 className="w-full h-auto object-cover"
               />
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
+              {/* Overlay removed as per request */}
             </div>
 
             {/* Floating card */}
@@ -82,7 +81,7 @@ const AboutSection = () => {
             <span className="text-secondary font-semibold tracking-wider uppercase text-sm">
               QUIENES SOMOS
             </span>
-            
+
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mt-3 mb-6 leading-tight">
               Trabajamos en tus{" "}
               <span className="gradient-text-navy">objetivos empresariales</span>
@@ -92,16 +91,16 @@ const AboutSection = () => {
 
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               <span className="text-foreground font-medium italic">
-                Somos un equipo de profesionales especializados en ofrecer soluciones contables, 
+                Somos un equipo de profesionales especializados en ofrecer soluciones contables,
                 financieras y tributarias.
               </span>
             </p>
 
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Nos enfocamos en brindar asesoría personalizada en contabilidad, impuestos, 
-              gestión de planillas, finanzas, costos y auditoría. Además, gestionamos trámites 
-              relacionados con la devolución de impuestos, restitución de derechos arancelarios 
-              como Drawback, y representamos a nuestros clientes ante entidades como la SUNAT 
+              Nos enfocamos en brindar asesoría personalizada en contabilidad, impuestos,
+              gestión de planillas, finanzas, costos y auditoría. Además, gestionamos trámites
+              relacionados con la devolución de impuestos, restitución de derechos arancelarios
+              como Drawback, y representamos a nuestros clientes ante entidades como la SUNAT
               y SUNAFIL en procesos de fiscalización y auditoría.
             </p>
 
