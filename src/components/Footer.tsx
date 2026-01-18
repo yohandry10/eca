@@ -156,6 +156,9 @@ const Footer = () => {
               <Link to="/politica-privacidad" className="text-primary-foreground/50 text-sm hover:text-secondary transition-colors">
                 Política de Privacidad
               </Link>
+              <Link to="/eliminacion-datos" className="text-primary-foreground/50 text-sm hover:text-secondary transition-colors">
+                Eliminación de Datos
+              </Link>
               <Link to="/terminos" className="text-primary-foreground/50 text-sm hover:text-secondary transition-colors">
                 Términos de Servicio
               </Link>

@@ -28,14 +28,14 @@ const Preloader = () => {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-gradient-to-br from-primary via-navy to-primary"
+          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-primary"
         >
           {/* Animated background elements */}
           <div className="absolute inset-0 overflow-hidden">
             {[...Array(6)].map((_, i) => (
               <motion.div
                 key={i}
-                className="absolute rounded-full bg-secondary/10"
+                className="absolute rounded-full bg-white/10"
                 style={{
                   width: Math.random() * 300 + 100,
                   height: Math.random() * 300 + 100,
@@ -77,11 +77,11 @@ const Preloader = () => {
               }}
               className="relative mb-8"
             >
-              <div className="absolute inset-0 blur-2xl bg-secondary/30 rounded-full" />
+              <div className="absolute inset-0 blur-2xl bg-white/20 rounded-full" />
               <img
                 src={logoEca}
                 alt="ECA Soluciones Empresariales"
-                className="relative w-48 md:w-64 h-auto drop-shadow-2xl"
+                className="relative w-48 md:w-64 h-auto drop-shadow-2xl brightness-0 invert"
               />
             </motion.div>
 

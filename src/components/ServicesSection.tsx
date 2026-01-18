@@ -22,12 +22,6 @@ const services = [
     description: "Ofrecemos servicios en la gestión tributaria para empresas de cualquier tamaño, garantizando el cumplimiento normativo.",
     href: "/servicios/outsourcing-tributario",
   },
-  {
-    icon: Briefcase,
-    title: "Servicios Adicionales",
-    description: "Asesoría integral en constitución de empresas, selección de personal y trámites administrativos diversos.",
-    href: "/servicios/servicios-adicionales",
-  },
 ];
 
 const ServicesSection = () => {
@@ -53,8 +47,8 @@ const ServicesSection = () => {
           </p>
         </motion.div>
 
-        {/* 4 Card Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* 3 Card Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, idx) => (
             <motion.div
               key={idx}
